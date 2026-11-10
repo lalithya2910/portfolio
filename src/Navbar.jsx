@@ -1,7 +1,11 @@
+
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
 
@@ -9,13 +13,13 @@ function Navbar() {
         Lalithya<span>.</span>
       </div>
 
-      <div className="nav-links">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/skills">Skills</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/education">Education</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+      <div className={`nav-links ${menuOpen ? "active" : ""}`}>
+        <NavLink to="/" onClick={() => setMenuOpen(false)}>Home</NavLink>
+        <NavLink to="/about" onClick={() => setMenuOpen(false)}>About</NavLink>
+        <NavLink to="/skills" onClick={() => setMenuOpen(false)}>Skills</NavLink>
+        <NavLink to="/projects" onClick={() => setMenuOpen(false)}>Projects</NavLink>
+        <NavLink to="/education" onClick={() => setMenuOpen(false)}>Education</NavLink>
+        <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink>
       </div>
 
       <a
@@ -25,6 +29,14 @@ function Navbar() {
       >
         Download Resume
       </a>
+
+      <button
+        className="menu-toggle"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle navigation menu"
+      >
+        {menuOpen ? "✕" : "☰"}
+      </button>
 
     </nav>
   );
