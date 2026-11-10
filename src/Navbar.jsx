@@ -19,7 +19,7 @@ function Navbar() {
       </div>
 
       <a
-        href="/lalithya%20resume.pdf"
+        href="/lalithya resume.pdf"
         download="lalithya resume.pdf"
         className="resume-btn"
       >
