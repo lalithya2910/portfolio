@@ -22,13 +22,15 @@ function Navbar() {
         <NavLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</NavLink>
       </div>
 
+      
       <a
-        href="/lalithya resume.pdf"
-        download="lalithya resume.pdf"
-        className="resume-btn"
+      href="/lalithya resume.pdf"
+      download="Lalithya_Resume.pdf"
+      className="resume-btn"
       >
-        Download Resume
+           Download Resume
       </a>
+
 
       <button
         className="menu-toggle"
