@@ -65,7 +65,7 @@ function Home() {
         <div className="glow-circle"></div>
 
         <img
-          src="/lalithya pic.jpeg"
+          src="https://res.cloudinary.com/lali2910/image/upload/v1794375285/lalithya_pic.jpg"
           alt="Lalithya"
         />
 
