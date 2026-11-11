@@ -64,9 +64,10 @@ function Home() {
 
         <div className="glow-circle"></div>
 
+       
         <img
-          src="https://res.cloudinary.com/lali2910/image/upload/v1794375285/lalithya_pic.jpg"
-          alt="Lalithya"
+         src={import.meta.env.VITE_CLOUDINARY_IMAGE_URL}
+         alt="Lalithya"
         />
 
       </div>
