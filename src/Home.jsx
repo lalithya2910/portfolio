@@ -1,3 +1,6 @@
+
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <section className="hero">
@@ -9,7 +12,9 @@ function Home() {
         </p>
 
         <h1>Lalithya</h1>
-         <br/>
+
+        <br />
+
         <h2>Frontend Developer</h2>
 
         <p className="hero-text">
@@ -19,13 +24,13 @@ function Home() {
 
         <div className="hero-buttons">
 
-          <a href="/Projects" className="primary-btn">
+          <Link to="/projects" className="primary-btn">
             View Projects
-          </a>
+          </Link>
 
-          <a href="/Contact" className="secondary-btn">
+          <Link to="/contact" className="secondary-btn">
             Contact Me
-          </a>
+          </Link>
 
         </div>
 
@@ -47,7 +52,7 @@ function Home() {
             in
           </a>
 
-          <a href="mailto:vanacharlalalithya@gmail.com">
+          <a href="mailto:vanacharlalalalithya@gmail.com">
             ✉
           </a>
 
