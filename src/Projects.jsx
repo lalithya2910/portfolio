@@ -17,7 +17,7 @@ function Projects() {
         "A machine learning based system to predict the presence of heart disease using patient medical data ",
       technologies: ["Python", "Streamlit", "Numpy", "Pandas","Scikit-learn","pickel"],
       image: "/heart-disease-prediction.png",
-      live: "https://steadily-captivate-legged.ngrok-free.dev/",
+      live: "https://heartdiseaseprediction-cavlnzs85km4r3ehipdykg.streamlit.app/",
       github: "https://github.com/lalithya2910/heartdiseaseprediction",
     },
     {
